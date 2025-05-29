@@ -31,7 +31,9 @@ controls:
     - path: ../lib/set-wallpaper.ps1
     - path: ../lib/update-dns.sh
 team_settings:
-
   secrets:
     - secret: "$FLEET_ENGINEERING_ENROLL_SECRET"
 software:
+  packages:
+    - path: ../lib/zoom.yml
+    - path: ../lib/coudflare-warp.yml
