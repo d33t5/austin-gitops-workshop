@@ -18,6 +18,7 @@ queries:
 agent_options:
   path: ../lib/agent-options.yml
 controls:
+  enable_disk_encryption: true
   macos_settings:
     custom_settings:
       - path: ../lib/disable-bluetooth-file-sharing.mobileconfig
@@ -25,8 +26,8 @@ controls:
   scripts:
     - path: ../lib/remove-zoom-artifacts.script.sh
     - path: ../lib/set-timezone.script.sh
+    - path: ../lib/set-wallpaper.ps1
 team_settings:
   secrets:
     - secret: "$FLEET_ENGINEERING_ENROLL_SECRET"
 software:
-
